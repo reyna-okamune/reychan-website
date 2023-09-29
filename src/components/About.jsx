@@ -40,8 +40,8 @@ export default function About() {
 
       
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img src={photoFrame} alt="Description" style={{ width: '450px', height: 'auto', }} />
-        <div style={{ paddingLeft: '40px',}}>
+        <img src={photoFrame} alt="Description" style={{ width: '300px', height: 'auto', }} />
+        <div style={{ paddingLeft: '10px',}}>
           <p style={{
             fontFamily: 'Crystal, sans-serif',
             fontSize: '12px',
