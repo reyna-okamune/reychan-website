@@ -89,7 +89,7 @@ function App() {
           <h1 
             style={{ 
               fontFamily: 'Protomo, sans-serif', 
-              fontSize: '27px', 
+              fontSize: '30px', 
               color:'white',
               textShadow:  `
               3px 3px 3px rgba(277,0,137,0.7), 
