@@ -88,7 +88,7 @@ function App() {
           />
           <h1 
             style={{ 
-              fontFamily: 'Excelorate, sans-serif', 
+              fontFamily: 'Protomo, sans-serif', 
               fontSize: '27px', 
               color:'white',
               textShadow:  `
