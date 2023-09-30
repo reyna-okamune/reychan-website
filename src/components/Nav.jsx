@@ -25,15 +25,20 @@ const mobileStyles = {
     top: '50px',
     right: '10px',
     backgroundColor: 'rgba(255, 33, 156, 0.7)',
-    padding: '10px',
-    borderRadius: '5px',
-    alignItems: 'center',  // Ensure content is centered
+    padding: '2.5px', // Reduced padding for a more minimalistic look
+    borderRadius: '4px',
+    alignItems: 'center',
   },
   li: {
-    marginBottom: '10px',
-    textAlign: 'center',   // Align the text to the center
+    margin: '2.5px 0', // Consistent spacing around each item
+    textAlign: 'center',
+  },
+  link: {
+    display: 'block',
+    padding: '2px 5px', // Padding around the text itself to make it easier to click/tap
   }
 };
+
 
 
 export default function Nav() {
