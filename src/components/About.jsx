@@ -13,6 +13,7 @@ const mobileStyles = {
       paddingLeft: '0',
       paddingRight: '0',
       paddingTop: '10px',
+      flexDirection: 'column',
       alignItems: 'center',
 
     },
@@ -20,6 +21,7 @@ const mobileStyles = {
       fontSize: '6px',
     },
     section: {
+      paddingTop: '10px',
       flexDirection: 'column',
       alignItems: 'center',
     },
