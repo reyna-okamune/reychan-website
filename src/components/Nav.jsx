@@ -25,12 +25,12 @@ const mobileStyles = {
     top: '50px',
     right: '10px',
     backgroundColor: 'rgba(255, 33, 156, 0.7)',
-    padding: '2.5px', // Reduced padding for a more minimalistic look
+    padding: '3px', // Reduced padding for a more minimalistic look
     borderRadius: '4px',
     alignItems: 'center',
   },
   li: {
-    margin: '2.5px 0', // Consistent spacing around each item
+    margin: '3px 0', // Consistent spacing around each item
     textAlign: 'center',
   },
   link: {
