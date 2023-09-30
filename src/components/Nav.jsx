@@ -33,6 +33,7 @@ const mobileStyles = {
     marginBottom: '10px',
     textAlign: 'center',   // Align the text to the center
   }
+};
 
 
 export default function Nav() {
