@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-scroll';
 
 const navStyles = {
+  backgroundColor: 'rgba(255,33,156,0.2)',  // Transparent pink
   position: 'sticky',
   top: 0,
   zIndex: 1000,
