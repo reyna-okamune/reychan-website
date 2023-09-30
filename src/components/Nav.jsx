@@ -22,8 +22,11 @@ const mobileStyles = {
   ul: {
     flexDirection: 'column',
     position: 'absolute',
-    top: '50px',
-    right: '10px',
+    top: '60px',  // Adjusted for better alignment
+    right: '50%',  // Centering the dropdown on the X-axis
+    transform: 'translateX(50%)',  // Completes the centering process
+    backgroundColor: 'rgba(255, 33, 156, 0.7)', // transparent pink
+
     padding: '10px',
     borderRadius: '5px'
   },
@@ -31,6 +34,7 @@ const mobileStyles = {
     marginBottom: '10px'
   }
 };
+
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
