@@ -22,18 +22,17 @@ const mobileStyles = {
   ul: {
     flexDirection: 'column',
     position: 'absolute',
-    top: '60px',  // Adjusted for better alignment
-    right: '50%',  // Centering the dropdown on the X-axis
-    transform: 'translateX(50%)',  // Completes the centering process
-    backgroundColor: 'rgba(255, 33, 156, 0.7)', // transparent pink
-
+    top: '50px',
+    right: '10px',
+    backgroundColor: 'rgba(255, 33, 156, 0.7)',
     padding: '10px',
-    borderRadius: '5px'
+    borderRadius: '5px',
+    alignItems: 'center',  // Ensure content is centered
   },
   li: {
-    marginBottom: '10px'
+    marginBottom: '10px',
+    textAlign: 'center',   // Align the text to the center
   }
-};
 
 
 export default function Nav() {
