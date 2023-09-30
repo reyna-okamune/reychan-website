@@ -8,13 +8,7 @@ const mobileStyles = {
     container: {
       padding: '5%',
     },
-    imageFrame: {
-      width: '200px',
-      paddingTop: '10px',
-      flexDirection: 'column',
-      alignItems: 'center',
-
-    },
+    
     textInfo: {
       fontSize: '6px',
     },
