@@ -9,9 +9,11 @@ const mobileStyles = {
       padding: '5%',
     },
     imageFrame: {
+      width: '200px',
+      paddingLeft: '0',
+      paddingRight: '0',
+      paddingTop: '10px',
       
-      flexDirection: 'column',
-      alignItems: 'center',
 
     },
     
