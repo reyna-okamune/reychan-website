@@ -94,7 +94,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
-        marginBottom: '20px',
+        marginBottom: '40px',
     },
     textContainer: {
         textAlign: 'left',
