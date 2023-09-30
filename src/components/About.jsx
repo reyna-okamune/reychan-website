@@ -24,7 +24,7 @@ const mobileStyles = {
       alignItems: 'center',
     },
     textContainer: {
-      marginTop: '10px',
+      marginTop: '20px',
     },
     header: {
       flexDirection: 'column',
