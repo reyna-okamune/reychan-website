@@ -24,7 +24,6 @@ const mobileStyles = {
     position: 'absolute',
     top: '50px',
     right: '10px',
-    backgroundColor: '#333',
     padding: '10px',
     borderRadius: '5px'
   },
