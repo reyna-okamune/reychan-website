@@ -14,7 +14,7 @@ export default function Currents() {
     const mobileStyles = {
         h1: {
             fontFamily: 'Protomo, sans-serif',
-            fontSize: '30px',
+            fontSize: '27.5px',
             color: 'white',
             textShadow: `
                 3px 3px 3px rgba(255,33,156,0.9),
