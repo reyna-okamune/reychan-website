@@ -34,8 +34,6 @@ const mobileStyles = {
     },
     h1: {
       fontSize: '40px',
-      paddingLeft: '0',
-      paddingRight: '0',
       paddingTop: '10px',
     },
     imageBounce: {
