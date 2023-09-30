@@ -35,7 +35,7 @@ const mobileStyles = {
   },
   link: {
     display: 'block',
-    padding: '2px 5px', // Padding around the text itself to make it easier to click/tap
+    padding: '2px 5.5px', // Padding around the text itself to make it easier to click/tap
   }
 };
 
