@@ -8,6 +8,12 @@ const mobileStyles = {
     container: {
       padding: '5%',
     },
+    imageFrame: {
+      
+      flexDirection: 'column',
+      alignItems: 'center',
+
+    },
     
     textInfo: {
       fontSize: '6px',
