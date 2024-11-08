@@ -3,50 +3,25 @@ import React from "react";
 export default function Projects() {
     const styles = {
         container: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh',
+            padding: '2rem',
+            position: 'relative',
+            backgroundColor: '#000',
+            paddingTop: '13rem',
         },
-        header: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            paddingBottom: '75px',
+        title: {
+            fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
+            fontWeight: 'bold',
+            color: '#ff789f',
         },
-        h1: {
-            fontFamily: 'Protomo, sans-serif',
-            fontSize: '60px',
-            color: 'white',
-            textShadow: `
-                3px 3px 3px rgba(255,33,156,0.9), 
-                -3px -3px 3px rgba(255,33,156,0.9), 
-                3px -3px 3px rgba(255,33,156,0.9), 
-                -3px 3px 3px rgba(255,33,156,0.9)
-            `,
-            textAlign: 'center',
-            paddingLeft: '30px',
-            paddingRight: '30px',
-        },
-        '@media (max-width: 768px)': {
-            container: {
-                padding: '5%',
-            },
-            imageFrame: {
-                width: '5%'
-            },
-            textInfo: {
-                fontSize: '10px'
-            }
+        text: {
+            fontSize: 'clamp(0.8rem, 1.5vw, 1.25rem)',
+            color: '#ff789f',
         }
     };
 
     return (
         <div id="projects" style={styles.container}>
-            <div style={styles.header}>
-                <h1 style={styles.h1}>PROJECTS</h1>
-            </div>
+            <h1 style={styles.title}>Projects</h1>
         </div>
     );
 }

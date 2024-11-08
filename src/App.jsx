@@ -6,9 +6,7 @@ import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Reyna from './components/Reyna';
-import purpleStar from './images/purple-star.jpg';
-import heart from './images/heart-title.jpg';
+
 
 function App() {
  
@@ -16,10 +14,9 @@ function App() {
   return (
     <div className="app-container">
     <Nav />
-    <Reyna />
     <About />
+    <Projects />
     <Currents />
-    <Skills />
     <Contact />
   
 </div>
