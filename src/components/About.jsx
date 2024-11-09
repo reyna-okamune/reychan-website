@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import photo1 from '../images/me-gallery/reyna_main_picture.png';
 
 export default function About() {
   const containerRef = useRef(null);
@@ -70,7 +71,22 @@ export default function About() {
         <div className="animate-on-scroll">
           <h1 style={styles.title}>Reyna Okamune</h1>
           <p style={styles.subtitle}>Personal Webpage & Portfolio</p>
-          <div style={styles.gallery}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '2rem'
+          }}>
+            <img 
+              src={photo1} 
+              alt="Reyna Okamune" 
+              style={{
+                width: '100%',
+                maxWidth: '500px',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '0.25rem'
+              }}
+            />
           </div>
         </div>
       </div>
