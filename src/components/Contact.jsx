@@ -1,7 +1,4 @@
 import React from "react";
-import 'font-awesome/css/font-awesome.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import phoneIcon from '../images/phone-icon.jpg';
 
 
 export default function Contact() {
@@ -10,7 +7,7 @@ export default function Contact() {
       padding: '2rem',
       position: 'relative',
       backgroundColor: '#000',
-      paddingTop: '13rem',
+      paddingTop: '10.5rem',
     },
     title: {
       fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',

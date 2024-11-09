@@ -3,170 +3,119 @@
 /* poppins google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   
-  background: #ffe4b3;
+  background: #ffeef3;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* top nav hover effect */
-
 .nav-link {
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .nav-link:hover {
+  color: #ff789f;
+}
+
+
+/* information container styling */
+.header-info-container {
+  padding: clamp(1rem, 4vw, 4rem);
+  position: relative;
+  background-color: #ffeef3;
+  padding-top: 10rem;
+  scroll-margin-top: 4rem;
+}
+.info-container {
+  padding: 2rem;
+  position: relative;
+  background-color: #000;
+  padding-top: 7.5rem;
+  scroll-margin-top: 1rem;
+}
+
+/* section title styling */
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: bold;
+  color: #ff789f;
+  padding-top: 1.75rem;
+  padding-bottom: 0.25rem;
+}
+.section-subtitle {
+  font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+  color: #ff789f;
+  font-weight: bold;
+}
+.section-description {
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
   color: #ffb51f;
+  font-weight: 600; /* slightly less bold than subtitle */
 }
 
-
-
-img {
-  max-width: 100%;
-  height: auto;
+/* project container styling */
+.currents-container {
+  padding: clamp(1rem, 4vw, 4rem);
+  position: relative;
+  background-color: #ffeef3;
+  padding-top: 10.5rem;
 }
-
-@media screen and (max-width: 768px) {
-  /* Adjust base font size */
-  body {
-      font-size: 14px; /* adjust this value as needed */
-  }
-
-  /* Reducing container padding */
-  .container {
-      padding-left: 5%;
-      padding-right: 5%;
-  }
-
-  /* Adjustments for custom fonts */
-  h1, h2, h3 {
-      font-size: 1.5rem; /* Adjust based on how big/small you want headers to be on mobile */
-  }
-
-  p, a, li, .textInfo {
-      font-size: 0.8rem; /* Adjust based on how big/small you want regular text to be on mobile */
-  }
-
-  /* If you have icons or images inside the container, adjust their sizes */
-  .star-shaped, .bounce, .pulse {
-      height: 100px;
-      width: 100px;
-  }
-
-  /* If you have a navbar, you might consider stacking the links */
-  nav a {
-      display: block;
-      margin-bottom: 5px;
-  }
-}
-
-.nav-link {
-  /* ... your existing styles for nav-link ... */
-  
-  @media (max-width: 768px) {
-    font-size: 14px; /* Adjust as necessary */
-  }
-}
-
-
-/* Common styles for container elements */
-.container {
+.project-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  gap: 1rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 3px solid #ff789f;
+  max-width: 800px;  /* limit maximum width */
+  margin: 0 auto;    /* center the container */
+}
+
+/* flip card styling */
+.flip-card {
+  background-color: transparent;
+  width: clamp(250px, 90vw, 700px); /* responsive width: min, perferred, max */
+  height: clamp(125px, 45vw, 200px); /* responsive height: min, perferred, max */
+  border: 1px solid #f1f1f1; /* temporary border */
+  perspective: 1000px; /* 3d effect */
+}
+
+.flip-card-inner {
+  position: relative;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-
-/* Star-shaped clip path */
-.star-shaped {
-  clip-path: polygon(50% 0%, 61.8% 38.2%, 98.1% 38.2%, 68.4% 61.8%, 79.4% 95%, 50% 76.6%, 20.6% 95%, 31.6% 61.8%, 1.9% 38.2%, 38.2% 38.2%);
-  object-position: center 10%;
-  height: 200px;  /* Set height */
-  width: 200px;  /* Set width */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-/* Bounce animation */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
-
-.bounce {
-  animation: bounce 2s infinite;
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
-
-/* Pulse animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
-
-.pulse {
-  animation: pulse 1s infinite;
-}
-
-/* Ringing and flipping animations */
-@keyframes ringing {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
-}
-
-@keyframes ringingFlipped {
-  0% {
-    transform: scaleX(-1) rotate(-5deg); 
-  }
-  50% {
-    transform: scaleX(-1) rotate(5deg); 
-  }
-  100% {
-    transform: scaleX(-1) rotate(-5deg); 
-  }
-}
-
-/* Flying animation */
-@keyframes flying {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
