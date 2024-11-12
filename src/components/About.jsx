@@ -76,17 +76,7 @@ export default function About() {
             justifyContent: 'center',
             marginTop: '2rem'
           }}>
-            <img 
-              src={photo1} 
-              alt="Reyna Okamune" 
-              style={{
-                width: '100%',
-                maxWidth: '500px',
-                height: 'auto',
-                objectFit: 'cover',
-                borderRadius: '0.25rem'
-              }}
-            />
+            {/* TODO: Add photo */}
           </div>
         </div>
       </div>
