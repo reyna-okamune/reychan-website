@@ -1,5 +1,5 @@
-import habibeats from '../images/project_banners/habibeats_project_banner.png';
-import marinahacks from '../images/project_banners/new_new_marinahacks_project_banner.png';
+import habibeats from '../images/project_banners/habibeats_logo.png';
+import marinahacks from '../images/project_banners/marinahacks_logo.png';
 
 import { useEffect, useRef } from 'react';
 
@@ -46,10 +46,9 @@ export default function Projects() {
             borderRadius: '0.5rem',
             overflow: 'hidden',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-            transition: 'transform 0.3s ease',
+            transition: 'transform 0.3s ease, border-color 0.3s ease',
             cursor: 'pointer',
             textDecoration: 'none',
-            color: 'inherit',
         },
         projectBanner: {
             width: '100%',
@@ -63,7 +62,7 @@ export default function Projects() {
             fontSize: 'clamp(1.1rem, 2vw, 1.5rem)',
             color: '#ff789f',
             marginBottom: '0.5rem',
-            fontWeight: '500',
+            fontWeight: '600',
             textAlign: 'center',
         },
     }
@@ -79,6 +78,10 @@ export default function Projects() {
     .fade-in {
       opacity: 1 !important;
       transform: translateY(0) !important;
+    }
+
+    .project-card:hover {
+        transform: scale(1.15);
     }
   `;
 
@@ -111,6 +114,7 @@ export default function Projects() {
                             target="_blank"
                             rel="noopener noreferrer"
                             style={styles.projectCard}
+                            className="project-card"
                         >
                             <img
                                 src={project.imageUrl}
