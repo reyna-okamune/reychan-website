@@ -37,6 +37,11 @@ export default function About() {
       fontSize: 'clamp(0.8rem, 1.5vw, 1.25rem)',
       color: '#ff789f',
     },
+    description: {
+      margin: '1rem 0',
+      fontSize: 'clamp(0.8rem, 1.5vw, 1.25rem)',
+      color: '#789fff',
+    },
     gallery: {
       display: 'grid',
       gridTemplateColumns: 'repeat(3, 1fr)',
@@ -71,6 +76,9 @@ export default function About() {
         <div className="animate-on-scroll">
           <h1 style={styles.title}>Reyna Okamune</h1>
           <p style={styles.subtitle}>Personal Webpage & Portfolio</p>
+          <p style={styles.description}>
+             welcome to my personal webpage! i tried to make it as chic and personal while still showcasing my coding skills! learn more about me here! (◕ᴗ◕✿)
+          </p>
           <div style={{
             display: 'flex',
             justifyContent: 'center',

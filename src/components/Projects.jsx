@@ -46,9 +46,10 @@ export default function Projects() {
             borderRadius: '0.5rem',
             overflow: 'hidden',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-            transition: 'transform 0.3s ease, border-color 0.3s ease',
+            transition: 'transform 0.3s ease',
             cursor: 'pointer',
             textDecoration: 'none',
+            padding: '0.5rem',
         },
         projectBanner: {
             width: '100%',
@@ -81,13 +82,13 @@ export default function Projects() {
     }
 
     .project-card:hover {
-        transform: scale(1.15);
+        transform: scale(1.05);
     }
   `;
 
     const projects = [
         {
-            title: "HabiBeats: Concert Pairing App",
+            title: "Concert Pairing App",
             imageUrl: habibeats,
             githubUrl: "https://github.com/maxiguillermo1/habiBeats",
         },
@@ -121,9 +122,6 @@ export default function Projects() {
                                 alt={project.title}
                                 style={styles.projectBanner}
                             />
-                            <div style={styles.projectInfo}>
-                                <h3 style={styles.projectTitle}>{project.title}</h3>
-                            </div>
                         </a>
                     ))}
                 </div>

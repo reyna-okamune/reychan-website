@@ -46,7 +46,7 @@ export default function Currents() {
         },
         subTitle: {
             fontSize: 'clamp(0.8rem, 1.5vw, 1.25rem)',
-            color: '#ff789f',
+            color: '#789fff',
         },
         itemContainer: {
             display: 'flex',
