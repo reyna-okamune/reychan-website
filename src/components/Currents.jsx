@@ -23,7 +23,7 @@ export default function Currents() {
             { threshold: 0.1 }
         );
 
-        const elements = containerRef.current.querySelectorAll('.animate-tunes, .animate-items, .animate-fashion');
+        const elements = containerRef.current.querySelectorAll('.animate-title, .animate-tunes, .animate-items, .animate-fashion');
         elements.forEach(el => observer.observe(el));
 
         return () => {
@@ -108,6 +108,7 @@ export default function Currents() {
     };
 
     const fadeInKeyframes = `
+        .animate-title,
         .animate-tunes,
         .animate-items,
         .animate-fashion {
@@ -127,8 +128,10 @@ export default function Currents() {
         <>
             <style>{fadeInKeyframes}</style>
             <div id="currents" ref={containerRef} style={styles.container}>
-                <h1 style={styles.title}>Current Favorites</h1>
-
+                <div className="animate-title">
+                    <h1 style={styles.title}>Current Favorites</h1>
+                </div>
+                
                 <p style={styles.subTitle}>tunes: </p>
                 <div className="animate-tunes" style={styles.itemContainer}>
                     <div style={styles.itemsContainer}>

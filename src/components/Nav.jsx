@@ -23,8 +23,8 @@ export default function Nav() {
       <nav style={topnav} className="flex justify-center items-center p-10">
         <ul className="flex gap-6 md:gap-24 text-center">
           <li><Link to="aboutMe" smooth={true} className="nav-link">Reyna Okamune</Link></li>
+          <li><Link to="currents" smooth={true} className="nav-link">Favorites</Link></li>
           <li><Link to="projects" smooth={true} className="nav-link">Projects</Link></li>
-          <li><Link to="currents" smooth={true} className="nav-link">Current Favorites</Link></li>
           <li><Link to="contact" smooth={true} className="nav-link">Contact</Link></li>
         </ul>
       </nav>
