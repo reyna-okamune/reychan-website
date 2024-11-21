@@ -1,5 +1,6 @@
 import habibeats from '../images/project_banners/habibeats_logo.png';
 import marinahacks from '../images/project_banners/marinahacks_logo.png';
+import music_playlist_organizer from '../images/project_banners/music_playlist_organizer_title.png';
 
 import { useEffect, useRef } from 'react';
 
@@ -98,6 +99,11 @@ export default function Projects() {
             githubUrl: "https://github.com/csulbwic/MarinaHacks-4.0",
         },
         // Add more projects as needed
+        {
+            title: "Music Playlist Organizer",
+            imageUrl: music_playlist_organizer,
+            githubUrl: "https://github.com/reyna-okamune/MusicPlaylistOrganizer",
+        },
     ];
 
     return (

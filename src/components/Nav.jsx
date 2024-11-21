@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 
 const topnav = {
   width: '100%',
@@ -7,13 +7,13 @@ const topnav = {
   fontFamily: 'Poppins, sans-serif',
   fontWeight: 'bold',
   fontSize: 'clamp(0.6rem, 1.2vw, 1.25rem)',
-  color: '#ffeef3', // light pink color
-  backgroundColor: '#789fff', // purple color
+  color: '#ffeef3',
+  backgroundColor: '#789fff',
   position: 'fixed',
   top: 0,
   zIndex: 1000,
-
 };
+
 
 
 
