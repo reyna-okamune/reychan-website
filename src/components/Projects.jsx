@@ -1,6 +1,6 @@
 import habibeats from '../images/project_banners/habibeats_logo.png';
 import marinahacks from '../images/project_banners/marinahacks_logo.png';
-import music_playlist_organizer from '../images/project_banners/music_playlist_organizer_title.png';
+import daily_vibe_app from '../images/project_banners/daily_vibe_app_banner.png';
 
 import { useEffect, useRef } from 'react';
 
@@ -89,6 +89,11 @@ export default function Projects() {
 
     const projects = [
         {
+            title: "Daily Vibe Blog",
+            imageUrl: daily_vibe_app,
+            githubUrl: "https://github.com/reyna-okamune/Daily-Vibe-Blog",
+        },
+        {
             title: "Concert Pairing App",
             imageUrl: habibeats,
             githubUrl: "https://github.com/maxiguillermo1/habiBeats",
@@ -97,12 +102,6 @@ export default function Projects() {
             title: "MarinaHacks 4.0 Website",
             imageUrl: marinahacks,
             githubUrl: "https://github.com/csulbwic/MarinaHacks-4.0",
-        },
-        // Add more projects as needed
-        {
-            title: "Music Playlist Organizer",
-            imageUrl: music_playlist_organizer,
-            githubUrl: "https://github.com/reyna-okamune/MusicPlaylistOrganizer",
         },
     ];
 

@@ -52,6 +52,11 @@ export default function About() {
       height: 'auto',
       objectFit: 'cover',
       borderRadius: '1rem',
+    },
+    projectLink: {
+      fontWeight: 'bold',
+      cursor: 'pointer',
+
     }
   }
 
@@ -77,15 +82,11 @@ export default function About() {
           <h1 style={styles.title}>Reyna Okamune</h1>
           <p style={styles.subtitle}>Personal Webpage & Portfolio</p>
           <p style={styles.description}>
-             welcome to my personal webpage! i tried to make it as chic and personal while still showcasing my coding skills! learn more about me here! (◕ᴗ◕✿)
+             Welcome to my personal webpage! I tried to make it as chic and personal while still showcasing my coding skills! Learn more about me here! (◕ᴗ◕✿)
           </p>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '2rem'
-          }}>
-            {/* TODO: Add photo */}
-          </div>
+          <br></br>
+          <p style={styles.description}>Currently Working On: <a style={styles.projectLink} href="https://daily-vibe-blog.vercel.app/" target="_blank">Daily Vibe Web App</a>! Check it out! ♡</p>
+
         </div>
       </div>
     </>
